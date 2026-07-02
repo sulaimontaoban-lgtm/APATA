@@ -1,0 +1,80 @@
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import img1 from "../../images/groupp.png"
+import Buutton from "../../components/buutton"
+
+
+
+const Proud = () => {
+    const wel = {
+        fontFamily: 'Fredoka',
+        fontWeight: 400,
+        fontStyle: 'Regular',
+        fontSize: '20px',
+        leadingTrim: 'NONE',
+        lineHeight: '100%',
+        letterSpacing: '0%',
+        textDecoration: 'underline',
+        textDecorationStyle: 'solid',
+        textDecorationOffset: '0%',
+        textDecorationThickness: '0%',
+        color: '#D12511',
+    }
+    const part = {
+        fontFamily: 'Fredoka',
+        fontWeight: 600,
+        fontStyle: 'SemiBold',
+        fontSize: '40px',
+        lineHeight: ' 100%',
+        letterSpacing: '0%',
+        color: '#030065',
+
+    }
+    const lore = {
+        fontFamily: 'Fredoka',
+        fontWeight: 400,
+        fontStyle: 'Regular',
+        fontSize: '15px',
+        leadingTrim: 'NONE',
+        lineHeight: '22px',
+        letterSpacing: '0%',
+
+    }
+    const buttonStyle = {
+    backgroundColor: 'red',
+    color: 'white',
+    width: 100,
+    height: 39,
+    angle: '0 deg',
+    opacity: 1,
+    gap: '10px',
+    borderTopRightRadius: '20px',
+    borderBottomLeftRadius: '20px',
+    paddingTop: '10px',
+    paddingRight: '30px',
+    paddingBottom: '10px',
+    paddingLeft: '30px',
+    cursor: 'pointer',
+    border: 'none',
+  };
+
+
+    return(
+        <Container style={{marginTop: "100px"}}>
+        <Row className="align-items-center">
+            <Col md={6} xs={12}>    
+                <img src={img1} alt="" width="100%"/>
+            </Col>
+            <Col md={6} xs={12} className="ps-md-5 ps-sm-0">
+                <p style={wel}>Our Approach</p>
+                <p style={part}>We are proud to be rated good by Macte</p>
+                <p style={lore}>Lorem ipsum dolor sit amet consectetur. Mauris facilisi suscipit erat in consectetur sapien id morbi. Massa arcu eget eu bibendum feugiat. Viverra iaculis velit id nisi habitant. Pulvinar nascetur et quis cursus placerat pharetra. Odio nisl etiam pellentesque ultrices lacus leo. Volutpat non donec orci sodales pellentesque pellentesque purus mi massa.</p>
+                <Buutton bot="Macte" buttonStyle={buttonStyle}/>
+            </Col>
+        </Row>
+        </Container>
+    )
+    }
+
+
+    export default Proud;
